@@ -42,6 +42,6 @@ var questions = [
                     "message('Welcome')", "Alt('Welcome')"],
         answer: "alert('Welcome')"
     }
-] 
+];
 
 
