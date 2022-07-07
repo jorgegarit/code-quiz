@@ -140,4 +140,5 @@ function saveScore() {
 // Start Code Quiz
 startQuizBtn.onclick = startCodeQuiz;
 
+
 submitBtn.onclick = saveScore;
