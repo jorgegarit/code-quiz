@@ -72,14 +72,13 @@ header {
 
 #questionArea {
     grid-column: 2 / span 2;
-    grid-row: 1;
+    grid-row: 1/ span 5;
     place-self: center;
     font-size: 30px;
     text-align: center;
     align-self: baseline;
     color: var(--second-color);
     font-weight: bold;
-    padding: 0;
 }
 
 #startQuiz {
@@ -89,6 +88,7 @@ header {
     border: 0;
     font-size: 15px;
     place-self: center;
+    border-radius: 10px;
 }
 
 #answer1, #answer2, #answer3, #answer4, #submitHS {
@@ -96,34 +96,69 @@ header {
     place-self: center;
     margin-left: 22px; 
     padding: 15px;
+    border-radius: 10px;
 }
 
 #answer1 {
     grid-column: 1/ span 2 ;
-    grid-row: 4 / span 1;
-}
-
-#answer2 {
-    grid-column: 1/ span 2 ;
     grid-row: 5 / span 1;
 }
 
-#answer3 {
-    grid-column: 1/ span 2 ;
+#answer2 {
+    grid-column: 1/ span 2;
     grid-row: 6 / span 1;
 }
 
-#answer4 {
-    grid-column: 1/ span 2 ;
+#answer3 {
+    grid-column: 1/ span 2;
     grid-row: 7 / span 1;
+}
+
+#answer4 {
+    grid-column: 1/ span 2;
+    grid-row: 8 / span 1;
 }
 
 #submitHS {
     grid-column: 3 / span 1;
-    grid-row: 5 / span 1;
+    grid-row: 6 / span 1;
 }
 
 #startQuiz:hover, #answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover, #submitHS:hover  {
     background-color: var(--third-color);
     color: var(--second-color);
 }
+
+#finalScore {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;
+    font-size: 15px;
+}
+
+#initials {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+    font-size: 15px;
+}
+
+#initialsTextArea {
+    grid-column: 2 / span 1;
+    grid-row: 6 / span 1;
+    resize: none;
+    font-size: 15px;
+}
+
+#answerResultGrid {
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px 15px;
+}
+
+#answerResult {
+    text-align: center;
+    grid-column: 2 / span 4;
+    grid-row: 1 / span 2;
+}
+
+
