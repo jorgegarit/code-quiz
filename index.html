@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Code Quiz!</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div>
+            <button class="btnHS" id="viewHighScore">View High Scores</button>
+        </div>
+        <div>
+            <p>Time: <span id="quizTime">...</span></p>
+        </div>
+    </header>
+
+    <!--quiz container-->
+    <section id="mainCointainer">
+        <div id="quizContainer">
+            <p id="questionArea">Welcome to the Code Quiz </p>
+
+            <button class="btn" id="start-quiz">Click to Start</button>
+            <button class="btn" id="answer1"></button>
+            <button class="btn" id="answer2"></button>
+            <button class="btn" id="answer3"></button>
+            <button class="btn" id="answer4"></button>
+            <button class="btn" id="finalAnswer"></button>
+
+            <p id="finalScore"></p>
+            <p id="initials"></p>
+        </div>
+        <div id="answerCorrectWrongGrid"></div>
+        <p id="answerCorrectWrong"></p>
+
+    </section>
+
+    <script src="./assets/js/codequiz.js"></script>
+    
+</body>
+</html>
