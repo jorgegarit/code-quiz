@@ -1,20 +1,43 @@
-// Main vars for script
-var status = true; 
-var whichQuestion = 0; 
-var whichAnswer = 0; 
-var score = 0;
-var highscore = 100
-var checkFinalAnswer = 0;
-var checktimes = 1;
 
-// Query Selectors from HTML Text
-var viewHighScoresBtnEl = document.querySelector("#viewHighScore");
-var startQuizBtnEl = document.querySelector("startQuiz");
-var answer1BtnEl = document.querySelector("answer1");
-var answer2BtnEl = document.querySelector("answer2");
-var answer3BtnEl = document.querySelector("answer3");
-var answer4BtnEl = document.querySelector("answer4");
-var submitHSBtnEl = document.querySelector("submitHS");
-var mainContainerBtnEl = document.querySelector("mainContainer");
-var quizTmeBtnEl = document.querySelector("quizTime");
-var answerResultBtnEl = document.querySelector("answerResult");
+// Dom Elements
+var quizTimeEl = document.querySelector("#quizTime");
+var questionsEl = document.querySelector("#questions");
+var answersEl = document.querySelector("#answers");
+var startQuizBtn = document.querySelector("#startQuiz");
+var submitBtn = document.querySelector("#submit");
+var initialsEl = document.querySelector("#initials");
+var answerResultEl = document.querySelector("#answerResult");
+
+// changing variables depending on amount of questions
+var ongoingQuestionArray = 0;
+var time = questions.length * 10;
+var timerId;
+
+
+function startCodeQuiz () {
+    //  We want to hide the home screen
+    var homeScreenEl = document.getElementById("homeScreen");
+    homeScreenEl.setAttribute("class", "hidden");
+
+    // Next we will make the questiosn section visible 
+    questionsEl.removeAttribute("class");
+
+    // Timer will start counting down
+    timerId = setInterval(clockTick, 1000);
+
+    quizTimeEl.textContent = time;
+
+    pullQuestions();
+}
+
+function pullQuestions() {
+    // will pull the questions from its array
+    var ongoingQuestion = questions[ongoingQuestionArray];
+
+    // pulled questioned will appear on screen
+    var questionTitleEl = document.getElementById("questionTitle");
+    questionTitleEl.textContent = ongoingQuestion.title;
+
+    // remove any of the old answers
+    answersEl.innerHTML = "";
+}
