@@ -30,17 +30,17 @@ var questions = [
     },
 
     {
-        title: "How do you create a function in JavaScript?",
-        choices: ["function createFunction()", "function = createFunction()", 
-                    "function createFunction[]", "function.createFunction()"],
-        answer: "function createFunction()"
+        title: "How do you declare a variable on JavaScript?",
+        choices: ["v variableName", "variable variableName", 
+                    "let var variableName", "var variableName"],
+        answer: "var variableName"
     },
 
     {
-        title: "How do you create a function in JavaScript?",
-        choices: ["function createFunction()", "function = createFunction()", 
-                    "function createFunction[]", "function.createFunction()"],
-        answer: "function createFunction()"
+        title: "How do you wite 'Welcome' in an alert box?",
+        choices: ["alert('Welcome')", "alertBox('Welcome')", 
+                    "message('Welcome')", "Alt('Welcome')"],
+        answer: "alert('Welcome')"
     }
 ] 
 
