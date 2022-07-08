@@ -5,9 +5,9 @@
 }
 
 :root {
-    --first-color: #0B172A;
-    --second-color: #BC4123;
-    --third-color: white;
+    --first-color: #f5f5DC;
+    --second-color: #DC143C;
+    --third-color: black;
 }
 
 body {
@@ -42,18 +42,21 @@ header a:hover {
 .mainContainer {
     margin: 100px auto 0 auto;
     max-width: 700px;
+    
 }
 
 .home h1 {
     color: var(--second-color);
     padding: 0 0 20px 0;
     font-size: 30px;
+    text-align: center;
 }
 
 .home p {
     color: var(--third-color);
     padding: 5px 0 20px 0;
     font-size: 15px;
+    text-align: center;
 }
 
 .hidden {
@@ -96,17 +99,27 @@ input[type="text"] {
     color: var(--second-color);
 }
 
-ol {
-    padding-left: 0px;
-    max-height: 500px;
-    overflow: auto;
+.mainContainer h1 {
+    font-size: 30px;
+    color: var(--second-color);
+    text-align: left;
+    padding: 0 0 20px 100px;
+}
+
+.mainContainer ul {
+    color: var(--third-color);
+    font-size: 15px;
+    text-align: left;
 }
 
 li {
-    padding: 10px;
-    list-style: decimal inside none;
+    list-style-type: none;
+    padding: 5px 0 5px 150px;
+    font-weight: bold;
+    color: var(--second-color);
 }
 
 li:nth-child(odd) {
-    background-color: var(--second-color);
+    background-color:var(--second-color);
+    color: var(--first-color);
 }
