@@ -123,3 +123,8 @@ li:nth-child(odd) {
     background-color:var(--second-color);
     color: var(--first-color);
 }
+
+.scoreBtns {
+    display: flex;
+    justify-content: flex-end;
+}

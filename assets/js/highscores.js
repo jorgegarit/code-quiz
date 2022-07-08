@@ -17,4 +17,12 @@ function displayScores() {
     });   
 }
 
-displayScores();
+function removeScores() {
+    window.localStorage.removeItem("scores");
+    document.location.reload();
+}
+
+document.getElementById("removeScores").onclick = removeScores;
+
+
+displayScores(); // runs function
